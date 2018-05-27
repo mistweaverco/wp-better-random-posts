@@ -45,14 +45,10 @@ class WpBetterRandomPosts {
                 }
         }
 
-        public static function getSimpleOpts($opts = array(), $defaultValues = array(), $defaultFallbackValue = false) {
-                foreach ($opts as $key => $value) {
+        public static function getSimpleOpts($opts = array(), $defaultValues = array()) {
+                foreach ($defaultValues as $key => $value) {
                         if (isset($opts[$key]) == false) {
-                                if (isset($defaultValues[$key])) {
-                                        $opts[$key] = $defaultValues[$key];
-                                } else {
-                                        $opts[$key] = $defaultFallbackValue;
-                                }
+                                $opts[$key] = $defaultValues[$key];
                         }
                 }
                 return $opts;
