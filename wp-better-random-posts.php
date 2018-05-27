@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Better Random Posts
-Version:     1.0.0
+Version:     2.0.0
 Plugin URI:  https://apps.walialu.com/wp-better-random-posts/
 Description: Better random posts for WordPress
 Author:      Marco Kellershoff

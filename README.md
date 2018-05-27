@@ -14,7 +14,7 @@ Then either run (the preferred way):
 ```bash
 git clone \
 https://github.com/superevilmegaco/wp-better-random-posts.git \
--b v1.0.0 \
+-b v2.0.0 \
 wp-better-random-posts
 ```
 
