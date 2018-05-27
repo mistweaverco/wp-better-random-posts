@@ -70,5 +70,64 @@ print_r($data);
 ?>
 ```
 
+Basic CSS styling
+-----------------
+
+Styling is completely up to you.
+Here's a basic example on what one could imagine, when using 
+`echo WpBetterRandomPosts::GetRandomPostsList();`:
+
+```css
+ul.wp-better-random-posts {
+        width: 100%;
+        max-width:560px;
+        text-align: center;
+}
+
+.wp-better-random-posts li {
+        text-align: left;
+        margin: 20px;
+        position: relative;
+        height: 90px;
+        overflow: hidden;
+        -webkit-box-shadow: 2px 2px 9px 0 rgba(0,0,0,0.2);
+        box-shadow: 2px 2px 9px 0 rgba(0,0,0,0.2);
+        vertical-align: middle;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:stretch;
+}
+
+.wp-better-random-posts .title {
+        font-size: 2em;
+        margin: 15px;
+        color: #222222;
+        order: 2;
+        flex-basis: 100%;
+        height: 90px;
+        font-weight: bold;
+        display: inline-flex;
+        width: calc(100% - 120px);
+        position: absolute;
+}
+.wp-better-random-posts .teaserimage {
+        order: 1;
+        flex-basis: 90px;
+}
+
+.wp-better-random-posts .img {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: inset 0 0 3em rgba(0,0,0,0.12);
+}
+```
+
+
+
 [releases]: https://github.com/superevilmegaco/wp-better-random-posts/releases
 
