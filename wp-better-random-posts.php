@@ -97,7 +97,14 @@ class WpBetterRandomPosts {
                 if (count($posts) > 0) {
                         $string .= '<ul class="'.$opts['cls'].'">';
                         foreach ($posts as $post) {
-                                $string .= '<li><a href="'. $post['permalink'] .'">'. $post['title'] .'</a></li>';
+                                $string .= '<li><a href="'. $post['permalink'] .'">';
+                                if ($post['teaserImage']) {
+                                        $string .= '<span class="teaserimage">'
+                                                .'<div class="img" style="background-image:url(\'' . $post['teaserImage'] .'\');"></div></span>';
+                                }
+                                $string .= '<span class="title"">'
+                                        . $post['title'] .'</span></a></li>';
+
                         }
                         $string .= '</ul>';
                 }
