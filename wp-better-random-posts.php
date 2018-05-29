@@ -102,7 +102,7 @@ class WpBetterRandomPosts {
                                         $string .= '<span class="teaserimage">'
                                                 .'<div class="img" style="background-image:url(\'' . $post['teaserImage'] .'\');"></div></span>';
                                 }
-                                $string .= '<span class="title"">'
+                                $string .= '<span class="title">'
                                         . $post['title'] .'</span></a></li>';
 
                         }
