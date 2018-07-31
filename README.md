@@ -127,7 +127,28 @@ ul.wp-better-random-posts {
 }
 ```
 
+Development
+-----------
+
+All linters are run async while editing, while all fixers are run synchronously
+before writing the contents of the buffer to disk using [ALE][vim-ale].
+
+### Linters
+
+- [CSSLint][csslint]
+- `php -l`
 
 
-[releases]: https://github.com/superevilmegaco/wp-better-random-posts/releases
+### Fixers
+
+- [Prettier (CSS)][prettier]
+- [PHP-CS-Fixer (PHP)][phpcsfixer]
+
+
+
+[vim-ale]: https://github.com/w0rp/ale
+[csslint]: https://github.com/CSSLint/csslint/wiki/Command-line-interface
+[phpcsfixer]: http://cs.sensiolabs.org/#globally-manual
+[prettier]: https://prettier.io
+[releases]: https://git.superevilmegaco.com/wordpress/wp-better-random-posts/tags
 
