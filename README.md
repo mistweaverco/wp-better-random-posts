@@ -13,8 +13,8 @@ Then either run (the preferred way):
 
 ```bash
 git clone \
-https://github.com/superevilmegaco/wp-better-random-posts.git \
--b v2.0.0 \
+https://git.superevilmegaco.com/wordpress/wp-better-random-posts.git \
+-b v3.0.1 \
 wp-better-random-posts
 ```
 
